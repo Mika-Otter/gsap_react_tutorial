@@ -1,8 +1,8 @@
-import Landing from "./components/Landing/Landing";
-import "./styles/global.scss";
+import Landing from "./app/components/Landing/Landing";
+import "./app/styles/global.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import AppNotch from "./components/Tutorial/01-NotchLoader/AppNotch";
-import AppClipPathLoader from "./components/Tutorial/02-ClipPathLoader/AppClipPathLoader";
+import AppNotch from "./Tutorial/01-NotchLoader/AppNotch";
+import AppClipPathLoader from "./Tutorial/02-ClipPathLoader/AppClipPathLoader";
 
 export default function App() {
   return (
