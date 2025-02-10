@@ -1,0 +1,16 @@
+.gallery {
+  margin-top: 15vh;
+  padding: 1vh 2vw;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  &__item {
+    width: calc(25% - 0.75vw);
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@use "../../styles/theme" as *;
+
+.landing {
+  &__nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1vh 2vw;
+    background-color: #ffffff1a;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    &__title {
+      font-size: 5vw;
+      font-family: $fam-b;
+      line-height: 1;
+      padding-top: 0.4vh;
+    }
+  }
+}
