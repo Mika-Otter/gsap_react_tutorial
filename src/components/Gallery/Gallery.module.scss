@@ -1,16 +1,50 @@
+@use "../../styles/theme" as *;
+
 .gallery {
-  margin-top: 15vh;
+  margin-top: 10vh;
   padding: 1vh 2vw;
 
   display: flex;
   flex-wrap: wrap;
-  gap: 2vw;
+  gap: 1.5vw;
   &__item {
-    width: calc(25% - 0.75vw);
+    width: calc((100% - 4.5vw) / 4);
     position: relative;
 
     img {
       width: 100%;
+      border-radius: 0.4vw;
+    }
+
+    h2 {
+      font-weight: 400;
+      font-size: 1.1vw;
+      text-transform: uppercase;
+      font-family: $fam-s;
+    }
+
+    &__gsapClub {
+      width: 3vw;
+      position: absolute;
+      top: 0.4vw;
+      right: 0.5vw;
+    }
+
+    &__details {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0.3vw;
+
+      &__difficulty {
+        display: flex;
+        flex-direction: row-reverse;
+
+        &__star {
+          position: relative;
+          width: 1.3vw;
+          height: 1.3vw;
+        }
+      }
     }
   }
 }

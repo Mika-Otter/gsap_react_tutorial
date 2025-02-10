@@ -1,15 +1,16 @@
 @use "./theme" as *;
 
-html,
 body {
-  max-width: 100%;
-
-  background-color: $white-primary;
+  margin: 0;
+  padding: 0;
+  background-color: #fbfbf9;
 }
 
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html,
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 * {
@@ -34,15 +35,15 @@ a {
   background: #67fca5e1;
 }
 
-// html.lenis {
-//   height: auto;
-// }
-// .lenis.lenis-smooth {
-//   scroll-behavior: auto;
-// }
-// .lenis.lenis-smooth [data-lenis-prevent] {
-//   overscroll-behavior: contain;
-// }
-// .lenis.lenis-stopped {
-//   overflow: hidden;
-// }
+html.lenis {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}

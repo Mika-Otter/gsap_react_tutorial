@@ -1,4 +1,4 @@
-@use "../../../../public/styles/theme.scss" as *;
+@use "../../../../styles/theme" as *;
 
 .home {
   padding: 1vh 1.3vw;
@@ -8,7 +8,7 @@
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  font-family: "MonumentGrotesk-Bold";
+  font-family: "MonumentGrotesk-Bold", Arial, Helvetica, sans-serif;
   color: $orange-primary;
   &__nav {
     display: flex;
@@ -18,7 +18,7 @@
   }
 
   &__title {
-    font-family: "MonumentGrotesk-Heavy";
+    font-family: "MonumentGrotesk-Heavy", Arial, Helvetica, sans-serif;
     font-size: clamp(2rem, 8vw, 8rem);
     line-height: 0.9;
     text-transform: uppercase;

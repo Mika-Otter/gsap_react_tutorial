@@ -1,18 +1,14 @@
-import { useState, useRef } from "react";
-import "./global.scss";
-import gsap from "gsap";
-import NotchLoader from "./NotchLoader/NotchLaoder";
+import { useEffect, useRef, useState } from "react";
 import Home from "./Home/Home";
+import NotchLoader from "./NotchLoader/NotchLaoder";
+import gsap from "gsap";
 
 export default function AppNotch() {
   const [isLoader, setIsLoader] = useState(true);
-  const mainTimeline = useRef(gsap.timeline({ paused: true }));
   return (
     <>
-      {isLoader && (
-        <NotchLoader setIsLoader={setIsLoader} timeline={mainTimeline} />
-      )}
-      <Home timeline={mainTimeline} />
+      <Home />
+      {isLoader && <NotchLoader setIsLoader={setIsLoader} />}
     </>
   );
 }

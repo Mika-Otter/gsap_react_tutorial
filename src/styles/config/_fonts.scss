@@ -1,15 +1,87 @@
 @font-face {
-  font-family: "OktaNeue-Regular";
-  src: url("/fonts/OktaNeue-Regular.ttf") format("truetype");
+  font-family: "SuisseIntl-Regular";
+  src: url("/fonts/SuisseIntlTrial-Regular.woff2") format("woff2");
   font-display: swap;
-  font-weight: normal;
-  font-style: normal;
 }
 
 @font-face {
   font-family: "SuisseIntl-Bold";
   src: url("/fonts/SuisseIntl-Bold.otf") format("opentype");
   font-display: swap;
-  font-weight: 500;
-  font-style: normal;
+}
+
+@font-face {
+  font-family: "MonumentGrotesk-Heavy";
+  src: url("../fonts/ABCMonumentGrotesk-Heavy-Trial.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "MonumentGrotesk-Bold";
+  src: url("../fonts/ABCMonumentGrotesk-Bold-Trial.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nighty";
+  src: url("../fonts/Nighty.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "NeueMontreal-Medium";
+  src: url("../fonts/PPNeueMontreal-Medium.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lanze-Variable";
+  src: url("../fonts/Lanze-Variable.woff2") format("woff2-variations");
+}
+
+@font-face {
+  font-family: "SelviaGenatu-Medium";
+  src: url("../fonts/SelviaGenatu-Medium.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rader-Regular";
+  src: url("../fonts/Rader-Regular.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rader-Bold";
+  src: url("../fonts/Rader-Bold.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Valve-ExtraBold";
+  src: url("../fonts/PPValve-PlainExtrabold.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Valve-ExtraBoldItalic";
+  src: url("../fonts/PPValve-PlainExtraboldItalic.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "OffBit-DotBold";
+  src: url("../fonts/OffBitTrial-DotBold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Obrazec";
+  src: url("../fonts/obrazec.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "SpaceMono";
+  src: url("../fonts/SpaceMono-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "OldStandardTT-Regular";
+  src: url("../fonts/OldStandardTT-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "OldStandardTT-Bold";
+  src: url("../fonts/OldStandardTT-Bold.ttf") format("truetype");
+  font-display: swap;
 }

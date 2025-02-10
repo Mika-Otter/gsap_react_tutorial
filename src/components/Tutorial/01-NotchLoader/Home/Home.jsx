@@ -3,15 +3,17 @@ import s from "./Home.module.scss";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
-export default function Home({ timeline }) {
+export default function Home() {
   const titleRef = useRef(null);
+  const timelineHomeRef = useRef(gsap.timeline({ paused: true }));
 
   useGSAP(() => {
     const items = document.querySelectorAll("[data-home-item]");
-    timeline.current
+    timelineHomeRef.current
       .from(
         titleRef.current,
         {
+          delay: 4.5, //total duration of the loader -0.5
           duration: 1,
           y: 30,
           opacity: 0,
@@ -25,6 +27,8 @@ export default function Home({ timeline }) {
         stagger: 0.1,
         ease: "power2.inOut",
       });
+
+    timelineHomeRef.current.play();
   }, []);
 
   return (

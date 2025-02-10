@@ -1,23 +1,24 @@
 import { useRef, useState } from "react";
 import s from "./NotchLoader.module.scss";
 import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
-export default function NotchLoader({ setIsLoader, timeline }) {
+export default function NotchLoader({ setIsLoader }) {
   const [progress, setProgress] = useState("000");
   const notchVerticalRef = useRef(null);
   const notchHorizontalRef = useRef(null);
   const progressSpanRef = useRef(null);
   const progressRef = useRef({ value: 0 });
   const formatNumber = (num) => num.toString().padStart(3, "0");
+  const timeline = useRef(gsap.timeline({ paused: true }));
 
   useGSAP(() => {
     timeline.current
-      .to(notchHorizontalRef.current, {
+      .set(notchHorizontalRef.current, {
         gap: `4vh`,
-        duration: 1,
-        ease: "power2.out",
       })
       .to(notchVerticalRef.current, {
+        delay: 1.5, // loading time of the video
         gap: `100vw`,
         duration: 3,
         ease: "power2.out",
@@ -34,7 +35,6 @@ export default function NotchLoader({ setIsLoader, timeline }) {
         },
         "<"
       )
-      .addLabel("loaderComplete")
       .to(
         notchHorizontalRef.current,
         {

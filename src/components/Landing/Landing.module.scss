@@ -10,11 +10,12 @@
     background-color: #ffffff1a;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-
+    border-bottom: 1px solid #0e0e0e;
     &__title {
-      font-size: 5vw;
+      font-size: 1.5vw;
       font-family: $fam-b;
       line-height: 1;
+      text-transform: uppercase;
       padding-top: 0.4vh;
     }
   }
